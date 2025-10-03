@@ -1,0 +1,33 @@
+AGENT DEBATE ARENA - QUICK SETUP GUIDE
+=====================================
+
+REQUIREMENTS:
+- Python 3.10+
+- Node.js and npm
+- Git (optional)
+
+LAUNCH THE APP:
+1. Open PowerShell or Command Prompt
+2. Navigate to the project folder:
+   cd C:\Users\Benja\Documents\Projects\agent_debate
+
+3. Run the startup script:
+   .\start.ps1
+
+   This will:
+   - Install required Python packages (FastAPI, uvicorn, python-dotenv)
+   - Start the backend server on http://localhost:8000
+   - Start the frontend server on http://localhost:3000
+
+4. Access the application:
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+   - API Documentation: http://localhost:8000/docs
+
+STOPPING THE APP:
+- Close the terminal windows or press Ctrl+C in each terminal
+
+TROUBLESHOOTING:
+- If PowerShell gives execution policy errors, run:
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+- Make sure you're in the correct directory before running .\start.ps1
